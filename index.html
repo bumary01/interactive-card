@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="gradientCard"></div>
+    <div id="sideGradient"></div>
+    <div id="cardContainer">
+        <div id="cardFront">
+
+            <div id="cardCircles">
+                <div id="cardFillCircle"></div>
+                <div id="cardOutlineCircle"></div>
+            </div>
+
+            <pre class="numPlaceholder">0000  0000  0000  0000</pre>
+
+            <div id="cardOwner">
+                <p class="OwnerName">JANE APPLESEED</p>
+                <p>00/00</p>
+            </div>
+            
+        </div>
+        <div id="cardBack">
+            <div id="cardLine"></div>
+            <div id="cardCVV">000</div>
+        </div>
+    </div>
+     <div class="container">
+            <form id="creditCardForm">
+                <div class="form-group">
+                    <label for="cardName">CARDHOLDER NAME:</label>
+                    <input type="text" id="cardName" name="cardName" placeholder="e.g Jane Appleseed">
+                    <div class="error" id="cardNameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">CARD NUMBER:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="e.g 1234 5678 9123 0000">
+                    <div class="error" id="cardNumberError"></div>
+                </div>
+                <div id="mmyycvv">
+                    <label>EXP.DATE(MM/YY)</label>
+                    <div class="form-group" id="mmyy">
+                        <input type="text" id="cardMonth" name="cardMonth" placeholder="MM">
+                        <input type="text" id="cardYear" name="cardYear" placeholder="YY">
+                        <div class="error" id="cardDateError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvc">CARD CVC:</label>
+                        <input type="text" id="cvc" name="cvc" placeholder="e.g 123">
+                        <div class="error" id="cvcError"></div>
+                    </div>
+
+                </div>
+                <button type="submit">Confirm</button>
+            </form>
+    </div>
+
+    <!-- <div class="new-container">
+        <h2>Payment Successful!</h2>
+        <p>Thank you for your payment.</p>
+    </div> -->
+    <!-- <div id="success"></div> -->
+
+    <script src="index.js"></script>
+</body>
+</html>

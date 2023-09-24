@@ -1,0 +1,227 @@
+
+body {
+    font-family: Lato, sans-serif;
+    background: (255, 255, 255, 1);
+    margin: 0;
+    padding: 0;
+    display:flex;
+
+}
+
+#sideGradient{
+    width: 483px;
+    height: 900px;
+    /* background: rgba(33, 9, 47, 1); */
+
+background: hsla(278, 68%, 11%, 1);
+
+background: linear-gradient(135deg, hsla(278, 68%, 11%, 1) 0%, hsla(0, 36%, 23%, 1) 64%, hsla(233, 72%, 24%, 1) 100%, hsla(41, 84%, 81%, 1) 100%);
+
+background: -moz-linear-gradient(135deg, hsla(278, 68%, 11%, 1) 0%, hsla(0, 36%, 23%, 1) 64%, hsla(233, 72%, 24%, 1) 100%, hsla(41, 84%, 81%, 1) 100%);
+
+background: -webkit-linear-gradient(135deg, hsla(278, 68%, 11%, 1) 0%, hsla(0, 36%, 23%, 1) 64%, hsla(233, 72%, 24%, 1) 100%, hsla(41, 84%, 81%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#21092F", endColorstr="#4F2525", GradientType=1 );
+
+
+
+/* background: linear-gradient(60deg, #1f005c, #3a005e, #6d0061, #a31d5f, #d0505c, #ed815e, #fba666, #ffb56b); */
+}
+#cardContainer{
+   margin-top: 250px;
+   position: absolute;
+   left:200px;
+}
+#cardFront{
+    color: white;
+    width: 330px;
+    height: 200px;
+    /* top: 187px; */
+    /* left: 164px; */
+    background-color: #ff1493;
+    background-image: linear-gradient(319deg, #ff1493 0%, #0000ff 37%, #ff8c00 100% );
+    border-radius: 10px ;
+}
+#cardCircles{
+    /* justify-items: center; */
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+    
+}
+#cardFillCircle{
+    margin-right: 15px;
+}
+#cardOutlineCircle{
+    margin-left:0px;
+}
+.numPlaceholder{
+    margin-left: 30px;
+    font-size:x-large;
+    margin-bottom:-2px ;
+}
+#cardOwner{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+#cardOwner .OwnerName{
+    margin-right: 80px;
+}
+#cardFillCircle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+}
+#cardOutlineCircle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* border: #fff; */
+    border: solid #fff ;
+}
+#cardBack{
+    width: 330px;
+    height: 200px;
+    top: 30px;
+    /* left: 258px; */
+    background: grey;
+    border-radius: 10px;
+    margin-left: 100px;
+    /* margin-top: 30px; */
+    position: relative;
+}
+#cardLine{
+    width: 100%;
+    height:45px;
+    background-color: black;
+    /* margin-top: -50px; */
+    top: 20px;
+    position: absolute;
+}
+#cardCVV{
+    width: 60%;
+    height: 40px;
+    background-color: rgb(184, 180, 180);
+    position: absolute;
+    top: 100px;
+    margin-left: 65px;
+    text-align: end;
+}
+
+
+.container {
+    width: 300px;
+    height: 350px;
+    margin-top: 200px;
+    margin-left: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+#mmyy{
+    display: flex;
+    margin-top: 20px;
+    margin-left: -135px;
+}
+#cvc{
+    width: 85px;
+}
+
+#mmyycvv{
+    display: flex;
+}
+#cardMonth{
+    width:30%;
+    max-height:15px;
+}
+#cardYear{
+    width: 30%;
+    max-height:15px;
+}
+#cardDateError{
+    margin-left:-150px;
+    margin-top: 50px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+button {
+    width: 98%;
+    height: 40px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* @media (max-width : 400px) {
+    #gradientCard{
+      
+    }
+    #cardFront{
+        max-width: 50%px;
+
+    }
+    #cardBack{
+        max-width: 50%px;
+
+    }
+
+    #sideGradient{
+        
+        width: 100%;
+        background: hsla(278, 68%, 11%, 1);
+
+    background: linear-gradient(135deg, hsla(278, 68%, 11%, 1) 0%, hsla(0, 36%, 23%, 1) 64%, hsla(233, 72%, 24%, 1) 100%, hsla(41, 84%, 81%, 1) 100%);
+
+    background: -moz-linear-gradient(135deg, hsla(278, 68%, 11%, 1) 0%, hsla(0, 36%, 23%, 1) 64%, hsla(233, 72%, 24%, 1) 100%, hsla(41, 84%, 81%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(278, 68%, 11%, 1) 0%, hsla(0, 36%, 23%, 1) 64%, hsla(233, 72%, 24%, 1) 100%, hsla(41, 84%, 81%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#21092F", endColorstr="#4F2525", GradientType=1 );
+
+
+    }
+    .container {
+        
+    }
+
+
+} */
